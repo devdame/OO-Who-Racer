@@ -1,7 +1,10 @@
 $(document).ready(function() {
+  resetRace();
   $('body').on("click", "#reset_button", function(e) {
     resetRace();
-  });
+    $('#reset_button').text('RESET');
+
+
   $(document).on('keyup', function(event) {
     var strip1 = $('#player1_strip')
     var strip2 = $('#player2_strip')
@@ -23,6 +26,7 @@ $(document).ready(function() {
           $("#victory2").css("display", "block");
         };
       };
+    });
   });
 });
 
@@ -33,6 +37,8 @@ function raceStop() {
 function resetRace() {
   $('.racer_table').find('.active').removeClass("active");
   $('.racer_table').find('.start').addClass("active");
+  $('body').find('.victory').css('display', 'none');
+
 }
 
 
