@@ -30,8 +30,35 @@ $(document).ready(function() {
   });
 });
 
+
+// race = $(document).on('keyup', function(event) {
+//     var strip1 = $('#player1_strip')
+//     var strip2 = $('#player2_strip')
+
+//     var player1 = strip1.find('.active')
+//     var player2 = strip2.find('.active')
+
+//       if(event.keyCode==81) {
+//         $(player1).removeClass("active").next().addClass("active");
+//         if(player1.next().hasClass("end")) {
+//           raceStop();
+//           $("#victory1").css("display", "block");
+//         };
+//       };
+//       if(event.keyCode==80) {
+//         $(player2).removeClass("active").next().addClass("active");
+//         if(player2.next().hasClass("end")) {
+//           raceStop();
+//           $("#victory2").css("display", "block");
+//         };
+//       };
+
+//   });
+
+
+
 function raceStop() {
-  $(document).unbind('keyup');
+  $(document).off('keyup');
 }
 
 function resetRace() {
