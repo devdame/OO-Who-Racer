@@ -1,20 +1,94 @@
 .container {
   margin: 20px auto;
-  width: 600px;
+  width: 100%;
   padding: 0px 20px 20px 20px;
   border: 1px dotted black;
+  text-align: center;
 }
-th {
-  text-align: left;
+
+@font-face {
+    font-family: '04b08';
+    src:url('../webfonts_04b08/04b08.ttf.woff') format('woff'),
+        url('../webfonts_04b08/04b08.ttf.svg#04b08') format('svg'),
+        url('../webfonts_04b08/04b08.ttf.eot'),
+        url('../webfonts_04b08/04b08.ttf.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
 }
+
 
 
 .racer_table td {
-  background-color: white;
-  height: 20px;
-  width: 20px;
+  padding: 0;
+  height: 80px;
+  width: 120px;
+}
+
+p {
+  margin-bottom: 50px;
+}
+
+.racer_table img {
+  display: none;
+  padding: 0;
+  margin: 0;
 }
 
 .racer_table td.active {
-  background-color: black;
+/*  background-color: black;*/
+  background-size: 75% 100%;
+  background-repeat: no-repeat;
+}
+
+#player1_strip td.active {
+  background-image: url('../ten.png');
+
+}
+
+#player2_strip td.active {
+  background-image: url('../eleven.png');
+}
+
+.racer_table td.active img {
+  /*display: inline;*/
+}
+
+.racer_table td.end {
+/*  display: inline-block;*/
+}
+
+.end {
+   background-image: url('../tardis.png');
+}
+
+#reset_button {
+  display: inline-block;
+  background: black;
+  color: #00FF00;
+  box-shadow: 0 0 10px #00FF00;
+  margin: auto;
+  margin-top: 40px;
+  padding: 10px;
+}
+
+#victory1 {
+  display: none;
+  text-align: center;
+}
+
+#victory2 {
+  display: none;
+  text-align: center;
+}
+
+body {
+  background-image: url('../space.jpg');
+  color: #00FF00;
+  font-family: '04b08';
+}
+
+h1 {
+  font-family: '04b08';
+  font-size: 4em;
+  margin-bottom: 0;
 }
