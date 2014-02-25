@@ -15,6 +15,7 @@ $(document).ready(function() {
       if(event.keyCode==81) {
         $(player1).removeClass("active").next().addClass("active");
         if(player1.next().hasClass("end")) {
+          $(player1).next().css("background-image", "url('../tardis.png')");
           raceStop();
           $("#victory1").css("display", "block");
         };
@@ -22,6 +23,7 @@ $(document).ready(function() {
       if(event.keyCode==80) {
         $(player2).removeClass("active").next().addClass("active");
         if(player2.next().hasClass("end")) {
+          $(player2).next().css("background-image", "url('../tardis.png')");
           raceStop();
           $("#victory2").css("display", "block");
         };
