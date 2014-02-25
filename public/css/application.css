@@ -17,10 +17,14 @@
 }
 
 
+tr {
+
+}
 
 .racer_table td {
+  opacity: 1.0;
   padding: 0;
-  height: 80px;
+  height: 120px;
   width: 120px;
 }
 
@@ -36,7 +40,7 @@ p {
 
 .racer_table td.active {
 /*  background-color: black;*/
-  background-size: 75% 100%;
+/*  background-size: 100% 100%;*/
   background-repeat: no-repeat;
 }
 
@@ -59,6 +63,12 @@ p {
 
 .end {
    background-image: url('../tardis.png');
+/*   background-size: 75% 100%;*/
+   background-repeat: no-repeat;
+}
+
+#logo {
+  font-size: 5.5em;
 }
 
 #reset_button {
@@ -69,6 +79,10 @@ p {
   margin: auto;
   margin-top: 40px;
   padding: 10px;
+}
+
+.victory h2 {
+  background: blue;
 }
 
 #victory1 {
@@ -92,3 +106,7 @@ h1 {
   font-size: 4em;
   margin-bottom: 0;
 }
+
+/*.backlit {
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(0,242,12,1)), color-stop(76%,rgba(255,255,255,0.24)), color-stop(100%,rgba(255,255,255,0)));
+}*/
