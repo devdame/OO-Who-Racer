@@ -17,54 +17,23 @@
 }
 
 
-tr {
-
-}
-
-.racer_table td {
-  opacity: 1.0;
-  padding: 0;
-  height: 120px;
-  width: 120px;
-}
 
 p {
   margin-bottom: 50px;
 }
 
-.racer_table img {
-  display: none;
-  padding: 0;
-  margin: 0;
+
+#player1 {
+  margin-left: 0;
 }
 
-.racer_table td.active {
-/*  background-color: black;*/
-/*  background-size: 100% 100%;*/
-  background-repeat: no-repeat;
+#player2 {
+  margin-left: 0;
 }
 
-#player1_strip td.active {
-  background-image: url('../ten.png');
-
-}
-
-#player2_strip td.active {
-  background-image: url('../eleven.png');
-}
-
-.racer_table td.active img {
-  /*display: inline;*/
-}
-
-.racer_table td.end {
-/*  display: inline-block;*/
-}
-
-.end {
-   background-image: url('../tardis.png');
-/*   background-size: 75% 100%;*/
-   background-repeat: no-repeat;
+.end-pic {
+  position: absolute;
+  left: 93.5%;
 }
 
 #logo {
@@ -85,14 +54,22 @@ p {
   background: blue;
 }
 
-#victory1 {
+.victory h1 {
+  background: blue;
+}
+
+#result {
+  background: blue;
+}
+
+
+#victory {
   display: none;
   text-align: center;
 }
 
-#victory2 {
-  display: none;
-  text-align: center;
+#track {
+  text-align: left;
 }
 
 body {
@@ -106,7 +83,3 @@ h1 {
   font-size: 4em;
   margin-bottom: 0;
 }
-
-/*.backlit {
-  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(0,242,12,1)), color-stop(76%,rgba(255,255,255,0.24)), color-stop(100%,rgba(255,255,255,0)));
-}*/
